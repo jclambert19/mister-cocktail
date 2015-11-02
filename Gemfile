@@ -47,9 +47,15 @@ end
 
 gem 'rspec-rails', group: [ :test ]
 
-  # Gemfile
-  ruby '2.2.3'
-  gem 'rails_12factor', group: :production
-  gem 'puma',           group: :production
+ruby '2.2.3'
+gem 'rails_12factor', group: :production
+gem 'puma',           group: :production
+
+#bootstrap
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'simple_form'
+
+
 
 

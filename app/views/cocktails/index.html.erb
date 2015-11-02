@@ -1,0 +1,10 @@
+<h1>Index of cocktails</h1>
+<%= link_to "Add a cocktail", new_cocktail_path %>
+<% @cocktails.each do |cocktail| %>
+  <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+  <p><%= cocktail.comment %></p>
+
+<%= link_to "Edit", edit_cocktail_path(cocktail) %>
+<%= link_to "Delete", cocktail_path(cocktail), method: :delete %>
+
+<% end %>
